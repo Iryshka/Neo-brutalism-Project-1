@@ -1,0 +1,52 @@
+@use "variables" as v;
+@use "mixins" as *;
+
+.transfer {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    @include breakpoints-up(medium) {
+        flex-direction: row-reverse;
+        padding: 0 5rem;
+        gap: 2rem;
+
+    }
+
+    &__title {
+        font-family: v.$ff-1;
+        font-size: 1.7rem;
+        font-weight: 400;
+        text-align: center;
+        padding-bottom: 1.5rem;
+
+
+        @include breakpoints-up(medium) {
+            text-align: left;
+            font-size: 2.1rem;
+            flex: 1;
+        }
+
+        @include breakpoints-up(large) {
+            font-size: 2.5rem;
+        }
+    }
+
+    &__span {
+        font-weight: 700;
+    }
+
+    &__image {
+        width: 100%;
+
+        @include breakpoints-up(medium) {
+            flex: 1;
+        }
+    }
+
+    &__img {
+        width: 100%;
+    }
+}

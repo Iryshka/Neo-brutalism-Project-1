@@ -1,0 +1,80 @@
+@use "variables" as v;
+@use "mixins" as *;
+
+.global {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+
+    @include breakpoints-up(medium) {
+         flex-direction: row;
+    }
+
+    @include breakpoints-up(large) {
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
+
+    &__text {
+        @include breakpoints-up(medium) {
+            text-align: right;
+            flex: 1;
+       }
+    }
+
+    &__title {
+        font-family: v.$ff-2;
+        font-size: 2rem;
+        padding-bottom: 1.5rem;
+
+        @include breakpoints-up(medium) {
+            font-size: 2.5rem;
+        }
+
+        @include breakpoints-up(large) {
+            font-size: 3rem;
+        }
+    }
+
+    &__paragraph {
+        font-family: v.$ff-1;
+        font-size: 1rem;
+        padding-bottom: 1rem;
+
+        @include breakpoints-up(medium) {
+            font-size: 1.5rem;
+            padding-bottom: 4rem;
+        }
+    }
+
+    &__link {
+        color: v.$primary-color-1;
+        font-size: 1rem;
+
+        &:hover {
+            color: v.$accent-color-2;
+        }
+
+        @include breakpoints-up(medium) {
+            font-size: 1.5rem;
+        }
+    }
+
+    &__link::after {
+        content: "\2192"
+    }
+
+    &__image {
+        width: 100%;
+
+        @include breakpoints-up(medium) {          
+            flex: 1;
+        }
+    }
+
+    &__img {
+        width: 100%;
+    }
+}

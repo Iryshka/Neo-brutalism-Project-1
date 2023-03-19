@@ -1,0 +1,92 @@
+@use "variables" as v;
+@use "mixins" as *;
+
+.header {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: v.$background-color;
+
+    font-family: v.$ff-1;
+
+    &__nav {
+        display: none;
+
+       @include breakpoints-up(medium) {
+        display: flex;
+        justify-content: flex-end;
+        width: 70%;
+       }
+    }
+
+    &__list {
+        display: flex;
+        align-items: center;
+    }
+
+    &__item {
+        padding-left: 5rem;
+        list-style: none;
+        cursor: pointer;
+    }
+
+    &__item:nth-child(1)::after,
+    &__item:nth-child(2)::after,
+    &__item:nth-child(3)::after {
+        padding-left: 0.5rem;
+        content: "\2335";
+    }
+
+    &__link {
+        text-decoration: none;
+        color: v.$primary-color-1;
+
+        &:hover {
+            color: v.$accent-color-2;
+        }
+    }
+
+    &__button {
+        display: none;
+
+        @include breakpoints-up(medium) {
+            display: block;
+        }
+    }
+
+
+    &__burger {
+        cursor: pointer;
+        
+        @include breakpoints-up(medium) {
+            display: none;
+        }
+    }
+
+    &__burger > * {
+        width: 35px;
+        height: 6px;
+        border: 2px solid black;
+        border-radius: 3px;
+        margin-bottom: 3px;
+        background-color: v.$accent-color-2;
+    }
+}
+
+.logo {
+    width: 65px;
+
+    @include breakpoints-up(medium) {
+        width: 70px;
+    }
+
+    @include breakpoints-up(large) {
+        width: 75px;
+    }
+}

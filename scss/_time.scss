@@ -1,0 +1,69 @@
+@use "variables" as v;
+@use "mixins" as *;
+
+.time {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    @include breakpoints-up(medium) {
+        flex-direction: row-reverse;
+        text-align: left;
+        gap: 5rem;
+   }
+
+   @include breakpoints-up(medium) {
+        padding-left: 5rem;
+        padding-right: 5rem;
+   }
+
+   &__text {
+       @include breakpoints-up(medium) {
+           flex: 2;
+     }
+   }
+
+    &__title {
+        font-family: v.$ff-2;
+        font-size: 1.7rem;
+        padding-bottom: 1.5rem;
+
+        @include breakpoints-up(medium) {
+            font-size: 2.5rem;
+      }
+
+        @include breakpoints-up(medium) {
+            font-size: 3rem;
+      }
+    }
+
+    &__paragraph {
+        font-family: v.$ff-1;
+        font-size: 1rem;
+        padding-bottom: 1.5rem;
+    }
+
+    &__button {
+        margin-bottom: 2rem;
+    }
+
+    &__image {
+        width: 100%;
+        padding-bottom: 2rem;
+        @include breakpoints-up(medium) {
+            flex: 1;
+      }
+    }
+
+    &__img {
+        width: 70%;
+
+        @include breakpoints-up(medium) {
+            width: 100%;
+      }
+    }
+
+}
