@@ -2,48 +2,51 @@
 @use "mixins" as *;
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 html,
 body {
-    height: 100vh;
-    font-size: 16px;
+  height: 100vh;
+  font-size: 16px;
 }
 
 body {
-    background-color: v.$background-color;
-    color: v.$primary-color-1;
+  background-color: v.$background-color;
+  color: v.$primary-color-1;
 }
 
 .container {
-    padding: 0 1rem;
+  padding: 0 1rem;
 
-    @include breakpoints-up(medium) {
-        padding: 0 2rem;
-    }
+  @include breakpoints-up(medium) {
+    padding: 0 2rem;
+  }
 
-    @include breakpoints-up(large) {
-        padding: 0 4rem;
-    }
+  @include breakpoints-up(large) {
+    padding: 0 4rem;
+  }
 }
-
 
 .button {
-    padding: 0.6rem 1.4rem;
-    background-color: v.$accent-color-2;
-    color: v.$primary-color-2;
-    font-weight: 700;
-    border: 3px solid v.$primary-color-1;
-    box-shadow: 3px 2px 0px black;
-    cursor: pointer;
+  padding: 1.2rem 2.5rem;
+  background-color: v.$accent-color-2;
+  font-size: 1rem;
+  color: v.$primary-color-2;
+  font-weight: 700;
+  border: 3px solid v.$primary-color-1;
+  box-shadow: 3px 2px 0px black;
+  cursor: pointer;
 
-    &:hover {
-        opacity: 0.8;
-    }
+  @include breakpoints-up(medium) {
+    padding: 0.8rem 1.5rem;
+    font-size: 0.9rem;
+  }
+
+  &:hover {
+    opacity: 0.8;
+    box-shadow: 4px 4px 2px black;
+  }
 }
-
-
-

@@ -31,16 +31,24 @@ body {
 }
 
 .button {
-  padding: 0.6rem 1.4rem;
+  padding: 1.2rem 2.5rem;
   background-color: hsl(266, 100%, 64%);
+  font-size: 1rem;
   color: hsl(0, 0%, 100%);
   font-weight: 700;
   border: 3px solid hsl(0, 0%, 0%);
   box-shadow: 3px 2px 0px black;
   cursor: pointer;
 }
+@media (min-width: 820px) {
+  .button {
+    padding: 0.8rem 1.5rem;
+    font-size: 0.9rem;
+  }
+}
 .button:hover {
   opacity: 0.8;
+  box-shadow: 4px 4px 2px black;
 }
 
 .header {
@@ -70,7 +78,7 @@ body {
   display: flex;
   align-items: center;
 }
-.header__item {
+.header__list-item {
   padding-left: 5rem;
   list-style: none;
   cursor: pointer;
@@ -78,6 +86,7 @@ body {
 .header__link {
   text-decoration: none;
   color: hsl(0, 0%, 0%);
+  transition: 0.2s ease;
 }
 .header__link:hover {
   color: hsl(266, 100%, 64%);
