@@ -1,63 +1,62 @@
 @use "variables" as v;
 @use "mixins" as *;
 
-
 .footer {
-    padding-top: 1.5rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  background-color: v.$primary-color-2;
+  font-family: v.$ff-2;
+  text-align: center;
+  border: 2px solid v.$primary-color-1;
+
+  @include breakpoints-up(medium) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__logo {
+    padding-right: 1rem;
     padding-bottom: 1.5rem;
-    background-color: v.$primary-color-2;
-    font-family: v.$ff-2;
-    text-align: center;
-    border: 2px solid v.$primary-color-1;
+  }
 
-    
+  &__nav {
+    padding-bottom: 1.5rem;
+  }
+
+  &__list {
     @include breakpoints-up(medium) {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+      column-count: 3;
+      text-align: left;
     }
+  }
 
-    &__logo {
-       padding-right: 1rem;
-       padding-bottom: 1.5rem;
+  &__list-item {
+    list-style: none;
+    font-size: 1rem;
+  }
+
+  &__list-item:nth-child(1),
+  &__list-item:nth-child(5),
+  &__list-item:nth-child(8) {
+    font-weight: 700;
+    font-size: 1.5rem;
+    padding-top: 1rem;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: v.$primary-color-1;
+    transition: 0.2s ease;
+
+    &:hover {
+      filter: invert(30%) sepia(90%) saturate(2763%) hue-rotate(250deg)
+        brightness(101%) contrast(102%);
     }
+  }
 
-    &__nav {
-        padding-bottom: 1.5rem;
-    }
-
-    &__list {
-        
-        @include breakpoints-up(medium) {
-            column-count: 3;
-            text-align: left;
-        }
-    }
-
-    &__list-item {
-        list-style: none;
-        font-size: 1rem;
-    }
-
-    &__list-item:nth-child(1),
-    &__list-item:nth-child(5),
-    &__list-item:nth-child(8) {
-        font-weight: 700;
-        font-size: 1.5rem;
-        padding-top: 1rem;
-    }
-
-    &__link {
-        text-decoration: none;
-        color: v.$primary-color-1;
-
-        &:hover {
-            filter: invert(30%) sepia(90%) saturate(2763%) hue-rotate(250deg) brightness(101%) contrast(102%);
-        }
-    }
-
-    &__social-img {
-        cursor: pointer;
-        padding-left: 0.5rem;
-    }
+  &__social-img {
+    cursor: pointer;
+    padding-left: 0.5rem;
+  }
 }

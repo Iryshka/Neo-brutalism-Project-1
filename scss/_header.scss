@@ -56,6 +56,7 @@
 
   &__burger {
     cursor: pointer;
+    border: none;
 
     @include breakpoints-up(medium) {
       display: none;
