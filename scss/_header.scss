@@ -36,12 +36,12 @@
         cursor: pointer;
     }
 
-    &__item:nth-child(1)::after,
-    &__item:nth-child(2)::after,
-    &__item:nth-child(3)::after {
-        padding-left: 0.5rem;
-        content: "\2335";
-    }
+    // &__item:nth-child(1)::after,
+    // &__item:nth-child(2)::after,
+    // &__item:nth-child(3)::after {
+    //     padding-left: 0.5rem;
+    //     content: "\2335";
+    // }
 
     &__link {
         text-decoration: none;
