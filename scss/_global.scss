@@ -29,15 +29,11 @@
 
   &__title {
     font-family: v.$ff-2;
-    font-size: 2rem;
+    font-size: 1.8rem;
     padding-bottom: 1.5rem;
 
-    @include breakpoints-up(medium) {
-      font-size: 2.2rem;
-    }
-
     @include breakpoints-up(large) {
-      font-size: 2.6rem;
+      font-size: 2rem;
     }
   }
 
@@ -47,7 +43,6 @@
     padding-bottom: 1rem;
 
     @include breakpoints-up(medium) {
-      font-size: 1.3rem;
       padding-bottom: 4rem;
     }
   }

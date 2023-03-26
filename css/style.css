@@ -29,7 +29,7 @@ body {
     padding: 0 2rem;
   }
 }
-@media (min-width: 1022px) {
+@media (min-width: 1026px) {
   .container {
     padding: 0 4rem;
   }
@@ -181,7 +181,7 @@ body {
     width: 70px;
   }
 }
-@media (min-width: 1022px) {
+@media (min-width: 1026px) {
   .logo {
     width: 75px;
   }
@@ -251,7 +251,7 @@ body {
     flex: 1;
   }
 }
-@media (min-width: 1022px) {
+@media (min-width: 1026px) {
   .transfer__title {
     font-size: 2.2rem;
   }
@@ -285,7 +285,7 @@ body {
     flex-direction: row;
   }
 }
-@media (min-width: 1022px) {
+@media (min-width: 1026px) {
   .global {
     padding-left: 5rem;
     padding-right: 5rem;
@@ -302,17 +302,12 @@ body {
 }
 .global__title {
   font-family: "IBM Plex Mono", monospace;
-  font-size: 2rem;
+  font-size: 1.8rem;
   padding-bottom: 1.5rem;
 }
-@media (min-width: 820px) {
+@media (min-width: 1026px) {
   .global__title {
-    font-size: 2.2rem;
-  }
-}
-@media (min-width: 1022px) {
-  .global__title {
-    font-size: 2.6rem;
+    font-size: 2rem;
   }
 }
 .global__paragraph {
@@ -322,7 +317,6 @@ body {
 }
 @media (min-width: 820px) {
   .global__paragraph {
-    font-size: 1.3rem;
     padding-bottom: 4rem;
   }
 }
@@ -496,7 +490,7 @@ body {
     height: 300px;
   }
 }
-@media (min-width: 1022px) {
+@media (min-width: 1026px) {
   .main__box {
     width: 45%;
     height: 400px;
