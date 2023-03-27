@@ -14,31 +14,28 @@
     height: 100vh;
     flex-direction: row-reverse;
     text-align: left;
-    gap: 5rem;
+    gap: 3rem;
   }
 
   @include breakpoints-up(medium) {
-    padding-left: 5rem;
-    padding-right: 5rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
   }
 
   &__text {
     @include breakpoints-up(medium) {
-      flex: 2;
+      flex: 1;
     }
   }
 
   &__title {
     font-family: v.$ff-2;
-    font-size: 2rem;
+    font-size: 1.8rem;
+    letter-spacing: -0.1rem;
     padding-bottom: 1.5rem;
 
     @include breakpoints-up(medium) {
       font-size: 2.2rem;
-    }
-
-    @include breakpoints-up(medium) {
-      font-size: 2.5rem;
     }
   }
 
@@ -54,17 +51,70 @@
 
   &__image {
     width: 100%;
-    padding-bottom: 2rem;
+    position: relative;
+
     @include breakpoints-up(medium) {
       flex: 1;
     }
   }
 
-  &__img {
-    width: 70%;
+  &__face {
+    width: 90%;
+  }
 
-    @include breakpoints-up(medium) {
-      width: 100%;
-    }
+  &__twelve {
+    position: absolute;
+    top: 5%;
+    left: 42%;
+  }
+
+  &__six {
+    position: absolute;
+    bottom: 17%;
+    left: 45%;
+  }
+
+  &__nine {
+    position: absolute;
+    left: 8%;
+    top: 35%;
+  }
+
+  &__three {
+    position: absolute;
+    top: 35%;
+    right: 16%;
+  }
+
+  &__rectangle2 {
+    position: absolute;
+    top: 28%;
+    left: 31%;
+    width: 32%;
+    transform: rotate(90deg);
+  }
+
+  &__rectangle1 {
+    position: absolute;
+    top: 37%;
+    left: 37%;
+    width: 32%;
+    z-index: 2;
+  }
+
+  &__dollar1 {
+    position: absolute;
+    top: 41%;
+    right: 43%;
+    z-index: 3;
+    width: 7%;
+  }
+
+  &__dollar2 {
+    position: absolute;
+    top: 32%;
+    right: 49%;
+    width: 7%;
+    transform: rotate(90deg);
   }
 }

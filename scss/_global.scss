@@ -8,6 +8,7 @@
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
+  gap: 3rem;
 
   @include breakpoints-up(medium) {
     height: 100vh;
@@ -15,8 +16,8 @@
   }
 
   @include breakpoints-up(large) {
-    padding-left: 5rem;
-    padding-right: 5rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
   }
 
   &__text {
@@ -30,10 +31,11 @@
   &__title {
     font-family: v.$ff-2;
     font-size: 1.8rem;
+    letter-spacing: -0.1rem;
     padding-bottom: 1.5rem;
 
     @include breakpoints-up(large) {
-      font-size: 2rem;
+      font-size: 2.2rem;
     }
   }
 
@@ -49,14 +51,14 @@
 
   &__link {
     color: v.$primary-color-1;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
 
     &:hover {
       color: v.$accent-color-2;
     }
 
     @include breakpoints-up(medium) {
-      font-size: 1.5rem;
+      font-size: 1.3rem;
     }
   }
 
@@ -66,13 +68,49 @@
 
   &__image {
     width: 100%;
+    position: relative;
+    margin: 0 auto;
 
     @include breakpoints-up(medium) {
       flex: 1;
     }
   }
 
-  &__img {
-    width: 100%;
+  &__globe {
+    width: 90%;
+  }
+
+  &__spot1 {
+    position: absolute;
+    top: 10%;
+    right: 18%;
+    width: 35%;
+  }
+
+  &__spot2 {
+    position: absolute;
+    top: 50%;
+    right: 25%;
+    width: 42%;
+  }
+
+  &__spot3 {
+    position: absolute;
+    top: 25%;
+    left: 10%;
+    width: 20%;
+  }
+
+  &__arrow {
+    position: absolute;
+    top: 5%;
+    left: 0;
+    width: 85%;
+  }
+
+  &__line {
+    position: absolute;
+    top: 15%;
+    left: 35%;
   }
 }

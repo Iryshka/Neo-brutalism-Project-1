@@ -77,6 +77,7 @@ body {
   right: 0;
   left: 0;
   background-color: hsl(31, 100%, 96%);
+  z-index: 5;
   font-family: "Inter", sans-serif;
 }
 .header__nav {
@@ -176,6 +177,9 @@ body {
 .logo {
   width: 65px;
 }
+.logo:hover {
+  filter: drop-shadow(3px 3px 1px rgba(0, 0, 0, 0.7));
+}
 @media (min-width: 820px) {
   .logo {
     width: 70px;
@@ -234,13 +238,13 @@ body {
   .transfer {
     height: 100vh;
     flex-direction: row-reverse;
-    padding: 0 5rem;
+    padding: 0 3rem;
     gap: 2rem;
   }
 }
 .transfer__title {
   font-family: "Inter", sans-serif;
-  font-size: 1.7rem;
+  font-size: 1.8rem;
   font-weight: 400;
   text-align: center;
   padding-bottom: 1.5rem;
@@ -260,6 +264,7 @@ body {
   font-weight: 700;
 }
 .transfer__image {
+  position: relative;
   width: 100%;
 }
 @media (min-width: 820px) {
@@ -267,8 +272,44 @@ body {
     flex: 1;
   }
 }
-.transfer__img {
+.transfer__rectangle {
   width: 100%;
+}
+.transfer__rectangle-small1 {
+  position: absolute;
+  top: 10%;
+  left: 5%;
+  width: 20%;
+}
+.transfer__rectangle-small2 {
+  position: absolute;
+  top: 10%;
+  right: 6%;
+  width: 20%;
+}
+.transfer__dollar1 {
+  position: absolute;
+  top: 15%;
+  left: 12%;
+  width: 5%;
+}
+.transfer__dollar2 {
+  position: absolute;
+  top: 15%;
+  right: 13%;
+  width: 5%;
+}
+.transfer__arrow {
+  position: absolute;
+  top: 20%;
+  left: 35%;
+  width: 30%;
+}
+.transfer__percent {
+  position: absolute;
+  top: 60%;
+  left: 35%;
+  width: 30%;
 }
 
 .global {
@@ -278,6 +319,7 @@ body {
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
+  gap: 3rem;
 }
 @media (min-width: 820px) {
   .global {
@@ -287,8 +329,8 @@ body {
 }
 @media (min-width: 1026px) {
   .global {
-    padding-left: 5rem;
-    padding-right: 5rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
   }
 }
 .global__text {
@@ -303,11 +345,12 @@ body {
 .global__title {
   font-family: "IBM Plex Mono", monospace;
   font-size: 1.8rem;
+  letter-spacing: -0.1rem;
   padding-bottom: 1.5rem;
 }
 @media (min-width: 1026px) {
   .global__title {
-    font-size: 2rem;
+    font-size: 2.2rem;
   }
 }
 .global__paragraph {
@@ -322,14 +365,14 @@ body {
 }
 .global__link {
   color: hsl(0, 0%, 0%);
-  font-size: 1.3rem;
+  font-size: 1.1rem;
 }
 .global__link:hover {
   color: hsl(266, 100%, 64%);
 }
 @media (min-width: 820px) {
   .global__link {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
 }
 .global__link::after {
@@ -337,14 +380,45 @@ body {
 }
 .global__image {
   width: 100%;
+  position: relative;
+  margin: 0 auto;
 }
 @media (min-width: 820px) {
   .global__image {
     flex: 1;
   }
 }
-.global__img {
-  width: 100%;
+.global__globe {
+  width: 90%;
+}
+.global__spot1 {
+  position: absolute;
+  top: 10%;
+  right: 18%;
+  width: 35%;
+}
+.global__spot2 {
+  position: absolute;
+  top: 50%;
+  right: 25%;
+  width: 42%;
+}
+.global__spot3 {
+  position: absolute;
+  top: 25%;
+  left: 10%;
+  width: 20%;
+}
+.global__arrow {
+  position: absolute;
+  top: 5%;
+  left: 0;
+  width: 85%;
+}
+.global__line {
+  position: absolute;
+  top: 15%;
+  left: 35%;
 }
 
 .time {
@@ -361,33 +435,29 @@ body {
     height: 100vh;
     flex-direction: row-reverse;
     text-align: left;
-    gap: 5rem;
+    gap: 3rem;
   }
 }
 @media (min-width: 820px) {
   .time {
-    padding-left: 5rem;
-    padding-right: 5rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
   }
 }
 @media (min-width: 820px) {
   .time__text {
-    flex: 2;
+    flex: 1;
   }
 }
 .time__title {
   font-family: "IBM Plex Mono", monospace;
-  font-size: 2rem;
+  font-size: 1.8rem;
+  letter-spacing: -0.1rem;
   padding-bottom: 1.5rem;
 }
 @media (min-width: 820px) {
   .time__title {
     font-size: 2.2rem;
-  }
-}
-@media (min-width: 820px) {
-  .time__title {
-    font-size: 2.5rem;
   }
 }
 .time__paragraph {
@@ -400,20 +470,63 @@ body {
 }
 .time__image {
   width: 100%;
-  padding-bottom: 2rem;
+  position: relative;
 }
 @media (min-width: 820px) {
   .time__image {
     flex: 1;
   }
 }
-.time__img {
-  width: 70%;
+.time__face {
+  width: 90%;
 }
-@media (min-width: 820px) {
-  .time__img {
-    width: 100%;
-  }
+.time__twelve {
+  position: absolute;
+  top: 5%;
+  left: 42%;
+}
+.time__six {
+  position: absolute;
+  bottom: 17%;
+  left: 45%;
+}
+.time__nine {
+  position: absolute;
+  left: 8%;
+  top: 35%;
+}
+.time__three {
+  position: absolute;
+  top: 35%;
+  right: 16%;
+}
+.time__rectangle2 {
+  position: absolute;
+  top: 28%;
+  left: 31%;
+  width: 32%;
+  transform: rotate(90deg);
+}
+.time__rectangle1 {
+  position: absolute;
+  top: 37%;
+  left: 37%;
+  width: 32%;
+  z-index: 2;
+}
+.time__dollar1 {
+  position: absolute;
+  top: 41%;
+  right: 43%;
+  z-index: 3;
+  width: 7%;
+}
+.time__dollar2 {
+  position: absolute;
+  top: 32%;
+  right: 49%;
+  width: 7%;
+  transform: rotate(90deg);
 }
 
 .footer {
