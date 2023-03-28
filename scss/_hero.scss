@@ -9,6 +9,7 @@
   height: 100vh;
 
   &__title {
+    width: 52%;
     font-family: v.$ff-2;
     font-size: 3rem;
     line-height: 2.8rem;
@@ -16,6 +17,10 @@
     padding-bottom: 3rem;
 
     @include breakpoints-up(medium) {
+    }
+
+    @include breakpoints-up(large) {
+      width: 36%;
       font-size: 4rem;
     }
   }

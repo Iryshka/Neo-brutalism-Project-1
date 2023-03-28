@@ -103,6 +103,8 @@ body {
     z-index: 1;
     transform: translateX(100%);
     transition: transform 0.8s ease-in;
+    font-size: 1.1rem;
+    font-weight: 700;
   }
 }
 .header__active {
@@ -139,6 +141,7 @@ body {
   padding: 20px 10px;
   background: hsl(266, 100%, 64%);
   box-shadow: 3px 2px 0px black;
+  border: 2px solid black;
   display: block;
   z-index: 1;
 }
@@ -199,14 +202,16 @@ body {
   height: 100vh;
 }
 .hero__title {
+  width: 52%;
   font-family: "IBM Plex Mono", monospace;
   font-size: 3rem;
   line-height: 2.8rem;
   text-align: center;
   padding-bottom: 3rem;
 }
-@media (min-width: 820px) {
+@media (min-width: 1026px) {
   .hero__title {
+    width: 36%;
     font-size: 4rem;
   }
 }
@@ -483,22 +488,22 @@ body {
 .time__twelve {
   position: absolute;
   top: 5%;
-  left: 42%;
+  left: 40%;
 }
 .time__six {
   position: absolute;
-  bottom: 17%;
-  left: 45%;
+  bottom: 10%;
+  left: 43%;
 }
 .time__nine {
   position: absolute;
   left: 8%;
-  top: 35%;
+  top: 39%;
 }
 .time__three {
   position: absolute;
-  top: 35%;
-  right: 16%;
+  top: 39%;
+  right: 17%;
 }
 .time__rectangle2 {
   position: absolute;
