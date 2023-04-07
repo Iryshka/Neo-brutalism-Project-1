@@ -2,8 +2,8 @@
 @use "mixins" as *;
 
 .header {
-  padding-top: 2.5rem;
-  padding-bottom: 2.5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -34,7 +34,7 @@
       background-color: v.$accent-color-1;
       height: 100vh;
       flex-direction: column;
-      justify-content: space-around;
+      justify-content: space-evenly;
       align-items: center;
       z-index: 1;
       transform: translateX(100%);
@@ -55,6 +55,8 @@
 
     @include breakpoints-down(medium) {
       opacity: 0;
+      padding: 20px 120px;
+      margin: 0 auto;
     }
   }
 

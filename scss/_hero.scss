@@ -16,11 +16,8 @@
     text-align: center;
     padding-bottom: 3rem;
 
-    @include breakpoints-up(medium) {
-    }
-
     @include breakpoints-up(large) {
-      width: 36%;
+      width: 58%;
       font-size: 4rem;
     }
   }
@@ -29,6 +26,12 @@
     color: v.$accent-color-1;
     text-shadow: 3px 3px v.$primary-color-1;
     text-shadow: -2px 0 black, 3px 3px black, 3px 0 black, 0 -2px black;
+    // white-space: nowrap;
+  }
+
+  &__span2 {
+    white-space: nowrap;
+    text-align: center;
   }
 
   &__paragraph {

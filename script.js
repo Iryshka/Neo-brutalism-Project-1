@@ -1,6 +1,8 @@
 const burger = document.querySelector(".header__burger");
 const navList = document.querySelector(".header__list");
 const navLinks = document.querySelectorAll(".header__list-item");
+// const visibilityBtn = document.getElementById("visibilityBtn");
+const visibility = document.querySelector(".welcome__visibility");
 
 burger.addEventListener("click", () => {
   navList.classList.toggle("header__active");
@@ -16,11 +18,28 @@ burger.addEventListener("click", () => {
   });
 });
 
-let resizeTimer;
-window.addEventListener("resize", () => {
-  document.body.classList.add("resize-animation-stopper");
-  clearTimeout(resizeTimer);
-  resizeTimer = setTimeout(() => {
-    document.body.classList.remove("resize-animation-stopper");
-  }, 400);
+visibility.addEventListener("click", () => {
+  const passwordInput = document.getElementById("password");
+  const icon = document.getElementById("welcome__icon");
+  if (passwordInput.type === "password") {
+    passwordInput.type = "text";
+    icon.innerText = "visibility_off";
+  } else {
+    passwordInput.type = "password";
+    icon.innerText = "visibility";
+  }
 });
+
+// visibilityBtn.addEventListener("click", toggleVisibility);
+
+// function toggleVisibility() {
+//   const passwordInput = document.getElementById("password");
+//   const icon = document.getElementById("welcome__icon");
+//   if (passwordInput.type === "password") {
+//     passwordInput.type = "text";
+//     icon.innerText = "visibility_off";
+//   } else {
+//     passwordInput.type = "password";
+//     icon.innerText = "visibility";
+//   }
+// }

@@ -8,3 +8,9 @@
     transform: translateX(0px);
   }
 }
+
+@keyframes rotate {
+  to {
+    transform: rotate(360deg);
+  }
+}

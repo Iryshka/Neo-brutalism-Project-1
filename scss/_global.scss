@@ -62,12 +62,12 @@
     }
   }
 
-  &__link::after {
-    content: "\2192";
-  }
+  // &__link::after {
+  //   content: "\2192";
+  // }
 
   &__image {
-    width: 100%;
+    width: 90%;
     position: relative;
     margin: 0 auto;
 

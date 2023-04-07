@@ -13,7 +13,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 90%;
+    width: 95%;
     height: 55%;
     background-color: v.$primary-color-2;
     border: 4px solid v.$primary-color-1;
@@ -30,6 +30,8 @@
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    width: 100%;
+    max-width: 400px;
   }
 
   &__title {
@@ -37,20 +39,57 @@
     padding-bottom: 1.5rem;
   }
 
+  &__password-container {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__password-img {
+    position: absolute;
+    top: 8px;
+    right: 30px;
+    width: 23px;
+    opacity: 0.6;
+    cursor: pointer;
+  }
+
+  &__password-img-closed {
+    color: red;
+    display: none;
+    position: absolute;
+    top: 8px;
+    right: 30px;
+    width: 23px;
+    opacity: 0.6;
+    cursor: pointer;
+  }
+
   &__input {
-    width: 300px;
+    width: 90%;
     margin-bottom: 1.5rem;
     border: 2px solid v.$primary-color-1;
+    color: v.$accent-color-2;
     padding: 0.5rem;
-    font-family: v.$primary-color-2;
+    font-family: v.$ff-2;
+
+    &:focus {
+      border: 2px solid v.$accent-color-2;
+      outline: 2px solid v.$accent-color-2;
+    }
   }
 
   &__socials {
     display: flex;
     gap: 1rem;
-    margin-top: 5.5rem;
+    margin-top: 2rem;
     padding: 0.2rem;
     border: 2px solid v.$primary-color-1;
+
+    @include breakpoints-up(medium) {
+      margin-top: 5.5rem;
+    }
   }
 
   &__img {
