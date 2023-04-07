@@ -1,8 +1,6 @@
 const burger = document.querySelector(".header__burger");
 const navList = document.querySelector(".header__list");
 const navLinks = document.querySelectorAll(".header__list-item");
-// const visibilityBtn = document.getElementById("visibilityBtn");
-const visibility = document.querySelector(".welcome__visibility");
 
 burger.addEventListener("click", () => {
   navList.classList.toggle("header__active");
@@ -18,6 +16,8 @@ burger.addEventListener("click", () => {
   });
 });
 
+const visibility = document.querySelector(".welcome__eye");
+
 visibility.addEventListener("click", () => {
   const passwordInput = document.getElementById("password");
   const icon = document.getElementById("welcome__icon");
@@ -29,6 +29,8 @@ visibility.addEventListener("click", () => {
     icon.innerText = "visibility";
   }
 });
+
+// const visibilityBtn = document.getElementById("visibilityBtn");
 
 // visibilityBtn.addEventListener("click", toggleVisibility);
 
