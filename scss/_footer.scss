@@ -13,6 +13,13 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  @include breakpoints-up(large) {
+    padding-left: 4rem;
+    padding-right: 4rem;
   }
 
   &__logo {

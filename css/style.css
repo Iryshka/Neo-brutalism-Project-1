@@ -555,6 +555,14 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+@media (min-width: 1026px) {
+  .footer {
+    padding-left: 4rem;
+    padding-right: 4rem;
   }
 }
 .footer__logo {

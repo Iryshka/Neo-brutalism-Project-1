@@ -16,6 +16,8 @@ burger.addEventListener("click", () => {
   });
 });
 
+
+
 const visibility = document.querySelector(".welcome__eye");
 
 visibility.addEventListener("click", () => {
