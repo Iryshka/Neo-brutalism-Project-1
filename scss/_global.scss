@@ -2,8 +2,7 @@
 @use "mixins" as *;
 
 .global {
-  padding-top: 7rem;
-  padding-bottom: 7rem;
+  padding: 100px 0 100px 0;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -11,7 +10,6 @@
   gap: 3rem;
 
   @include breakpoints-up(medium) {
-    height: 100vh;
     flex-direction: row;
   }
 

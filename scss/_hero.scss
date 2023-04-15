@@ -6,18 +6,16 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  padding: 100px 0 150px 0;
 
   &__title {
-    width: 52%;
     font-family: v.$ff-2;
-    font-size: 3rem;
+    font-size: 3.2rem;
     line-height: 2.8rem;
     text-align: center;
     padding-bottom: 3rem;
 
     @include breakpoints-up(large) {
-      width: 58%;
       font-size: 4rem;
     }
   }
@@ -26,11 +24,10 @@
     color: v.$accent-color-1;
     text-shadow: 3px 3px v.$primary-color-1;
     text-shadow: -2px 0 black, 3px 3px black, 3px 0 black, 0 -2px black;
-    // white-space: nowrap;
   }
 
   &__span2 {
-    white-space: nowrap;
+    display: block;
     text-align: center;
   }
 

@@ -7,7 +7,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: fixed;
+  position: sticky;
   top: 0;
   right: 0;
   left: 0;
@@ -38,7 +38,7 @@
       align-items: center;
       z-index: 1;
       transform: translateX(100%);
-      transition: transform 0.8s ease-in;
+      transition: transform 0.3s ease-in;
       font-size: 1.1rem;
       font-weight: 700;
     }
@@ -122,10 +122,24 @@
   &__span:before {
     top: -8px;
   }
+
+  // &__span.header__cross {
+  // }
+
+  &__span.header__cross:before {
+    transform: rotate(-45deg) translate(-5px, 6px);
+    transition: 0.3s;
+  }
+
+  &__span.header__cross:after {
+    transform: rotate(45deg) translate(-5px, -6px);
+    transition: 0.3s;
+  }
 }
 
 .logo {
-  width: 65px;
+  width: 55px;
+  transition: 0.2s;
 
   &:hover {
     filter: drop-shadow(3px 3px 1px rgb(0 0 0 / 0.7));

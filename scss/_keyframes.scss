@@ -9,6 +9,17 @@
   }
 }
 
+@keyframes navLinkFadeRevert {
+  from {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+  to {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+}
+
 @keyframes rotate {
   to {
     transform: rotate(360deg);

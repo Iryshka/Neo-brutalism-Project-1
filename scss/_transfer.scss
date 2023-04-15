@@ -8,9 +8,9 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 100px 0 100px 0;
 
   @include breakpoints-up(medium) {
-    height: 100vh;
     flex-direction: row-reverse;
     padding: 0 3rem;
     gap: 2rem;
