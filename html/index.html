@@ -68,25 +68,19 @@
           fixed cents.
         </h2>
         <div class="transfer__image">
+          <div class="transfer__rectangle"></div>
           <img
-            src="../images/rectangle.svg"
-            alt=""
-            class="transfer__rectangle"
-          />
-          <img
-            src="../images/rectanglesmall.svg"
+            src="../images/dollarsign.svg"
             alt=""
             class="transfer__rectangle-small1"
           />
           <img
-            src="../images/rectanglesmall.svg"
+            src="../images/dollarsign.svg"
             alt=""
             class="transfer__rectangle-small2"
           />
-          <img src="../images/dollar.svg" alt="" class="transfer__dollar1" />
-          <img src="../images/dollar.svg" alt="" class="transfer__dollar2" />
           <img src="../images/arrow.svg" alt="" class="transfer__arrow" />
-          <img src="../images/percent.svg" alt="" class="transfer__percent" />
+          <span class="transfer__percent">0.5% only</span>
         </div>
       </section>
 
@@ -99,10 +93,23 @@
           <a class="global__link" href="#">See supported countries </a>
         </div>
         <div class="global__image">
+          <!-- <div class="global__globe"></div> -->
           <img src="../images/globe.svg" alt="" class="global__globe" />
-          <img src="../images/spot1.svg" alt="" class="global__spot1" />
-          <img src="../images/spot2.svg" alt="" class="global__spot2" />
-          <img src="../images/spot3.svg" alt="" class="global__spot3" />
+          <img
+            src="../images/spot1.svg"
+            alt=""
+            class="global__spot1 global__shake"
+          />
+          <img
+            src="../images/spot2.svg"
+            alt=""
+            class="global__spot2 global__shake"
+          />
+          <img
+            src="../images/spot3.svg"
+            alt=""
+            class="global__spot3 global__shake"
+          />
           <img src="../images/line.svg" alt="" class="global__line" />
           <img src="../images/globearrow 1.svg" alt="" class="global__arrow" />
         </div>
@@ -124,21 +131,16 @@
         <div class="time__image">
           <div class="time__face"></div>
           <img src="../images/face.svg" alt="" class="time__face" />
-          <img src="../images/twelve.svg" alt="" class="time__twelve" />
-          <img src="../images/nine.svg" alt="" class="time__nine" />
-          <img src="../images/three.svg" alt="" class="time__three" />
-          <img src="../images/six.svg" alt="" class="time__six" />
+          <span class="time__twelve time__span">12</span>
+          <span class="time__nine time__span">9</span>
+          <span class="time__three time__span">3</span>
+          <span class="time__six time__span">6</span>
           <img
             src="../images/dollarsign.svg"
             alt=""
             class="time__rectangle1 time__rotate"
           />
-          <img
-            src="../images/rectanglesmall.svg"
-            alt=""
-            class="time__rectangle2"
-          />
-          <img src="../images/dollar.svg" alt="" class="time__dollar2" />
+          <img src="../images/dollarsign.svg" alt="" class="time__rectangle2" />
         </div>
       </section>
 
@@ -147,17 +149,21 @@
         <h3 class="main__title">We are 0.5% on all transaction</h3>
         <p class="main__paragraph">No catch</p>
         <div class="main__button">
-          <a href="welcome.html"><button class="button">Get started</button></a>
+          <a href="welcome.html"
+            ><button class="button pricing__button">Get started</button></a
+          >
         </div>
       </div>
     </main>
 
     <footer class="footer">
-      <img
-        src="../images/logo.png"
-        alt="company's logo"
-        class="footer__logo logo"
-      />
+      <a href="../html/index.html">
+        <img
+          src="../images/logo.png"
+          alt="company's logo"
+          class="footer__logo logo"
+        />
+      </a>
       <nav class="footer__nav">
         <ul class="footer__list">
           <li class="footer__list-item">Service</li>
@@ -191,17 +197,17 @@
       </nav>
 
       <div class="footer__socials">
-        <a href="https://www.instagram.com/" class="footer__link"
+        <a href="https://www.instagram.com/" class="footer__social-link"
           ><img src="../images/instagram.png" alt="" class="footer__social-img"
         /></a>
-        <a href="https://www.linkedin.com/" class="footer__link"
+        <a href="https://www.linkedin.com/" class="footer__social-link"
           ><img src="../images/linkedin.png" alt="" class="footer__social-img"
         /></a>
-        <a href="https://twitter.com/" class="footer__link"
+        <a href="https://twitter.com/" class="footer__social-link"
           ><img src="../images/twitter.png" alt="" class="footer__social-img"
         /></a>
       </div>
     </footer>
-    <script src="../script.js"></script>
+    <script src="../index.js"></script>
   </body>
 </html>

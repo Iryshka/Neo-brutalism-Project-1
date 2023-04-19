@@ -86,6 +86,7 @@
     border: 2px solid black;
     display: block;
     z-index: 1;
+    transition: 0.5s;
 
     &:hover {
       opacity: 0.8;
@@ -95,6 +96,10 @@
     @include breakpoints-up(medium) {
       display: none;
     }
+  }
+
+  &__burger-yellow {
+    background-color: v.$accent-color-1;
   }
 
   &__span {

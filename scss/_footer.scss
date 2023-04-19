@@ -22,11 +22,6 @@
     padding-right: 4rem;
   }
 
-  &__logo {
-    // padding-right: 1rem;
-    // padding-bottom: 1.5rem;
-  }
-
   &__nav {
     padding-bottom: 1.5rem;
   }
@@ -55,6 +50,17 @@
     text-decoration: none;
     color: v.$primary-color-1;
     transition: 0.2s ease;
+    cursor: pointer;
+  }
+
+  &__link:not(:first-child) {
+    margin-left: 0.5rem;
+  }
+
+  &__social-link {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
 
     &:hover {
       filter: invert(30%) sepia(90%) saturate(2763%) hue-rotate(250deg)
@@ -63,7 +69,6 @@
   }
 
   &__social-img {
-    cursor: pointer;
-    padding-left: 0.5rem;
+    width: 100%;
   }
 }

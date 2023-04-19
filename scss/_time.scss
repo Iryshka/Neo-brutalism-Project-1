@@ -60,16 +60,21 @@
     width: 90%;
   }
 
+  &__span {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+
   &__twelve {
     position: absolute;
-    top: 5%;
-    left: 40%;
+    top: 4%;
+    left: 41%;
   }
 
   &__six {
     position: absolute;
     bottom: 10%;
-    left: 43%;
+    left: 46%;
   }
 
   &__nine {
@@ -99,14 +104,6 @@
     width: 32%;
     z-index: 2;
     transform-origin: 30% 57%;
-  }
-
-  &__dollar2 {
-    position: absolute;
-    top: 32%;
-    right: 49%;
-    width: 7%;
-    transform: rotate(90deg);
   }
 
   // ROTATE ANIMATION

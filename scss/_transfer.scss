@@ -47,7 +47,11 @@
   }
 
   &__rectangle {
-    width: 100%;
+    width: 95%;
+    height: 200px;
+    background-color: v.$accent-color-2;
+    box-shadow: 7px 6px black;
+    margin: 0 auto;
   }
 
   &__rectangle-small1 {
@@ -64,20 +68,6 @@
     width: 20%;
   }
 
-  &__dollar1 {
-    position: absolute;
-    top: 15%;
-    left: 12%;
-    width: 5%;
-  }
-
-  &__dollar2 {
-    position: absolute;
-    top: 15%;
-    right: 13%;
-    width: 5%;
-  }
-
   &__arrow {
     position: absolute;
     top: 20%;
@@ -87,8 +77,12 @@
 
   &__percent {
     position: absolute;
+    display: block;
     top: 60%;
-    left: 35%;
-    width: 30%;
+    left: 33%;
+    font-size: 1.8rem;
+    font-family: v.$ff-2;
+    color: v.$primary-color-2;
+    font-weight: bold;
   }
 }

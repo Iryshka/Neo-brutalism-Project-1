@@ -54,35 +54,42 @@
     <main class="welcome">
       <div class="welcome__box">
         <h2 class="welcome__title">Welcome!</h2>
-        <form action="" class="welcome__form">
-          <input
-            type="email"
-            name="email"
-            id="email"
-            class="welcome__input"
-            placeholder="Email"
-          />
-          <div class="welcome__password-container">
+
+        <form action="" id="welcome__form" class="welcome__form">
+          <div class="welcome__input-control">
+            <input
+              type="text"
+              class="welcome__input"
+              name="email"
+              id="email"
+              placeholder="email"
+            />
+            <div class="welcome__error"></div>
+          </div>
+
+          <div class="welcome__input-control welcome__input-control-password">
             <input
               type="password"
+              class="welcome__input"
               name="password"
               id="password"
-              class="welcome__input"
-              placeholder="Password"
+              placeholder="password"
             />
             <i class="welcome__eye"
               ><span
                 id="welcome__icon"
-                class="material-symbols-outlined welcome__password-img"
+                class="material-symbols-outlined welcome__input-password-img"
               >
-                visibility
+                visibility_off
               </span></i
             >
+            <div class="welcome__error"></div>
+          </div>
+
+          <div class="welcome__button">
+            <button type="submit" class="button">Sign up</button>
           </div>
         </form>
-        <div class="welcome__button">
-          <button class="button">Sign up</button>
-        </div>
 
         <div class="welcome__socials">
           <a class="welcome__link" href="https://www.linkedin.com/"
@@ -97,6 +104,6 @@
         </div>
       </div>
     </main>
-    <script src="../script.js"></script>
+    <script src="../index.js"></script>
   </body>
 </html>

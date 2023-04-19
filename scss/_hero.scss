@@ -6,7 +6,11 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 100px 0 150px 0;
+  padding: 110px 0 160px 0;
+
+  @include breakpoints-up(medium) {
+    padding-bottom: 230px;
+  }
 
   &__title {
     font-family: v.$ff-2;

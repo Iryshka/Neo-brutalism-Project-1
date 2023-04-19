@@ -45,15 +45,21 @@
     font-family: v.$ff-1;
     font-weight: 600;
     font-size: 1.3rem;
+    padding-left: 15px;
+    padding-right: 15px;
     padding-bottom: 1rem;
 
     @include breakpoints-up(medium) {
       font-size: 1.6rem;
-      padding-bottom: 5rem;
+      padding-bottom: 4rem;
     }
 
     @include breakpoints-up(medium) {
       font-size: 2rem;
     }
+  }
+
+  &__button {
+    margin-bottom: 55px;
   }
 }
