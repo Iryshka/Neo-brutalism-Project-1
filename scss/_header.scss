@@ -52,11 +52,23 @@
     padding-left: 5rem;
     list-style: none;
     cursor: pointer;
+    animation-direction: normal;
+    animation-duration: 0.5s;
+    animation-fill-mode: forward;
+    animation-timing-function: ease;
 
     @include breakpoints-down(medium) {
       opacity: 0;
       padding: 20px 120px;
       margin: 0 auto;
+    }
+
+    &.m-out {
+      animation-name: navLinkFadeRevert;
+    }
+
+    &.m-to {
+      animation-name: navLinkFade;
     }
   }
 
@@ -80,8 +92,8 @@
 
   &__burger {
     cursor: pointer;
-    padding: 20px 10px;
-    background: v.$accent-color-2;
+    padding: 15px 10px;
+    background-color: v.$accent-color-2;
     box-shadow: 3px 2px 0px black;
     border: 2px solid black;
     display: block;
@@ -96,49 +108,41 @@
     @include breakpoints-up(medium) {
       display: none;
     }
+
+    &.m-yellow {
+      background-color: v.$accent-color-1;
+    }
+
+    &.m-yellow {
+      .header__span1 {
+        transform: rotate(-45deg) translate(-5px, 5px);
+        transition: 0.3s;
+      }
+
+      .header__span2 {
+        opacity: 0;
+        transition: 0.3s;
+      }
+
+      .header__span3 {
+        transform: rotate(45deg) translate(-5px, -5px);
+        transition: 0.3s;
+      }
+    }
+
+    & > * {
+      background: v.$primary-color-1;
+      height: 3px;
+      width: 30px;
+      display: block;
+      position: relative;
+      transition: all ease 0.1s;
+    }
   }
 
-  &__burger-yellow {
-    background-color: v.$accent-color-1;
-  }
-
-  &__span {
-    background: v.$primary-color-1;
-    height: 3px;
-    width: 30px;
-    display: block;
-    position: relative;
-    transition: all ease 0.1s;
-  }
-
-  &__span:after,
-  &__span:before {
-    background: v.$primary-color-1;
-    height: 3px;
-    width: 30px;
-    display: block;
-    position: absolute;
-    content: "";
-    left: 0;
-    top: 8px;
-    transition: all ease 0.2s;
-  }
-
-  &__span:before {
-    top: -8px;
-  }
-
-  // &__span.header__cross {
-  // }
-
-  &__span.header__cross:before {
-    transform: rotate(-45deg) translate(-5px, 6px);
-    transition: 0.3s;
-  }
-
-  &__span.header__cross:after {
-    transform: rotate(45deg) translate(-5px, -6px);
-    transition: 0.3s;
+  &__span1,
+  &__span2 {
+    margin-bottom: 4px;
   }
 }
 

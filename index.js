@@ -8,46 +8,31 @@ const burgerSpan = document.querySelector(".header__span");
 burger.addEventListener("click", () => {
   navList.classList.toggle("header__active");
 
-  burgerSpan.classList.toggle("header__cross");
-
   addAnimationToLinks();
 
   yellowBurger();
 });
 
 function yellowBurger() {
-  burger.classList.toggle("header__burger-yellow");
-}
-
-//   navLinks.forEach((link, index) => {
-//     if (link.style.animation) {
-//       link.style.animation = ``;
-//     } else {
-//       link.style.animation = `navLinkFade 0.5s ease forwards ${
-//         index / 7 + 0.7
-//       }s`;
-//     }
-//   });
-// });
-
-function addListenerToLink(link) {
-  link.addEventListener(
-    "click",
-    () => navList.classList.remove("header__active"),
-    burger.classList.remove("header__burger-yellow")
-  );
+  burger.classList.toggle("m-yellow");
 }
 
 function addAnimationToLinks() {
   navLinks.forEach((link, index) => {
-    addListenerToLink(link);
+    if (link.style.animation) {
+      link.style.animation = ``;
+    } else {
+      link.style.animation = `navLinkFade 0.5s ease forwards ${
+        index / 7 + 0.7
+      }s`;
+    }
+  });
+}
 
-    const activeAnimation = link.style.animation.includes("navLinkFade")
-      ? "navLinkFadeRevert"
-      : "navLinkFade";
-    const delay = index / 7 + 0.4;
-
-    link.style.animation = `${activeAnimation} 0.5s ease forwards ${delay}s`;
+function addListenerToLink(link) {
+  link.addEventListener("click", () => {
+    navList.classList.remove("header__active");
+    burger.classList.remove("m-yellow");
   });
 }
 

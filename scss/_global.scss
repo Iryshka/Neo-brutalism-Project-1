@@ -60,12 +60,7 @@
     }
   }
 
-  // &__link::after {
-  //   content: "\2192";
-  // }
-
   &__image {
-    width: 90%;
     position: relative;
     margin: 0 auto;
 
@@ -75,11 +70,8 @@
   }
 
   &__globe {
-    width: 55vh;
-    height: 55vh;
-    border-radius: 50%;
+    width: 90%;
     margin: 0 auto;
-    background-color: red;
   }
 
   &__spot1 {

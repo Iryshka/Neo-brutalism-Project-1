@@ -17,6 +17,7 @@ body {
 body {
   background-color: v.$background-color;
   color: v.$primary-color-1;
+  overflow-x: hidden;
 }
 
 .container {
