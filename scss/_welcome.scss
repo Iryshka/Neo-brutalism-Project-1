@@ -141,10 +141,13 @@
   }
 
   &__link {
-    &:hover {
-      filter: invert(30%) sepia(90%) saturate(2763%) hue-rotate(250deg)
-        brightness(101%) contrast(102%);
+    & svg rect:hover {
+      fill: #9747ff;
     }
+  }
+  &__twitter svg path:hover {
+    fill: #9747ff;
+    stroke: #9747ff;
   }
 }
 

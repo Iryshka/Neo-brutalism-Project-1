@@ -9,7 +9,6 @@
   align-items: center;
   position: sticky;
   top: 0;
-  right: 0;
   left: 0;
   background-color: v.$background-color;
   z-index: 5;
@@ -143,23 +142,6 @@
   &__span1,
   &__span2 {
     margin-bottom: 4px;
-  }
-}
-
-.logo {
-  width: 55px;
-  transition: 0.2s;
-
-  &:hover {
-    filter: drop-shadow(3px 3px 1px rgb(0 0 0 / 0.7));
-  }
-
-  @include breakpoints-up(medium) {
-    width: 70px;
-  }
-
-  @include breakpoints-up(large) {
-    width: 75px;
   }
 }
 

@@ -1,16 +1,15 @@
 // COLORS
 
-$primary-color-1: hsl(0, 0%, 0%);
-$primary-color-2: hsl(0, 0%, 100%);
+$primary-color-1: #000000;
+$primary-color-2: #ffffff;
 
-$accent-color-1: hsl(59, 100%, 64%);
-$accent-color-2: hsl(266, 100%, 64%);
-$accent-color-3: hsla(101, 100%, 34%, 1);
+$accent-color-1: #fffc47;
+$accent-color-2: #9747ff;
+$accent-color-3: #37ad00;
 
-$background-color: hsl(31, 100%, 96%);
+$background-color: #fff5eb;
 
 // FONTS
 
-$ff-1: 'Inter', sans-serif;
-$ff-2: 'IBM Plex Mono', monospace;
-
+$ff-1: "Inter", sans-serif;
+$ff-2: "IBM Plex Mono", monospace;

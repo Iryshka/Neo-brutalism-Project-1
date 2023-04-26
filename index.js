@@ -29,22 +29,19 @@ function addAnimationToLinks() {
   });
 }
 
-// function addListenerToLink() {
-//   navLinks.addEventListener("click", () => {
-//     navList.classList.remove("header__active");
-//     burger.classList.remove("m-yellow");
-//     console.log("Hey");
-//   });
-// }
+// iffy function
 
-navLinks.forEach((link) => {
-  link.addEventListener("click", (e) => {
-    navList.classList.remove("header__active");
-    burger.classList.remove("m-yellow");
+(function addListenerToLinks() {
+  navLinks.forEach((link) => {
+    link.addEventListener("click", () => {
+      // console.log("link");
+      navList.classList.remove("header__active");
+      burger.classList.remove("m-yellow");
+    });
   });
-});
+})();
 
-// VALIDATION FORM
+//VALIDATION FORM
 
 const form = document.getElementById("welcome__form");
 const email = document.getElementById("email");

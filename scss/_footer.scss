@@ -9,12 +9,19 @@
   text-align: center;
   border: 2px solid v.$primary-color-1;
 
+  @include breakpoints-up(semimedium) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 16px;
+  }
+
   @include breakpoints-up(medium) {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-left: 2rem;
-    padding-right: 2rem;
+    padding-left: 32px;
+    padding-right: 32px;
   }
 
   @include breakpoints-up(large) {
@@ -24,6 +31,14 @@
 
   &__nav {
     padding-bottom: 1.5rem;
+
+    @include breakpoints-up(semimedium) {
+      flex-grow: 1;
+    }
+
+    @include breakpoints-up(medium) {
+      flex-grow: 0;
+    }
   }
 
   &__list {
@@ -51,6 +66,10 @@
     color: v.$primary-color-1;
     transition: 0.2s ease;
     cursor: pointer;
+
+    &:hover {
+      color: #9747ff;
+    }
   }
 
   &__link:not(:first-child) {
@@ -61,11 +80,21 @@
     display: inline-block;
     width: 35px;
     height: 35px;
+    transition: 0.7s;
 
-    &:hover {
-      filter: invert(30%) sepia(90%) saturate(2763%) hue-rotate(250deg)
-        brightness(101%) contrast(102%);
+    & svg rect:hover {
+      fill: #9747ff;
     }
+
+    // & svg path:hover {
+    //   fill: #9747ff;
+    //   stroke: #9747ff;
+    // }
+  }
+
+  &__twitter svg path:hover {
+    fill: #9747ff;
+    stroke: #9747ff;
   }
 
   &__social-img {

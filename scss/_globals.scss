@@ -17,7 +17,8 @@ body {
 body {
   background-color: v.$background-color;
   color: v.$primary-color-1;
-  overflow-x: hidden;
+  // overflow-x: hidden;
+  font-family: v.$ff-1;
 }
 
 .container {
@@ -43,6 +44,7 @@ body {
   border: 3px solid v.$primary-color-1;
   box-shadow: 3px 2px 0px black;
   cursor: pointer;
+  transition: 0.3s;
 
   @include breakpoints-up(medium) {
     padding: 0.8rem 1.5rem;
@@ -50,7 +52,25 @@ body {
   }
 
   &:hover {
-    opacity: 0.8;
+    background-color: yellow;
+    color: black;
     box-shadow: 4px 4px 2px black;
+  }
+}
+
+.logo {
+  width: 55px;
+  transition: 0.2s;
+
+  &:hover {
+    filter: drop-shadow(3px 3px 1px rgb(0 0 0 / 0.7));
+  }
+
+  @include breakpoints-up(medium) {
+    width: 70px;
+  }
+
+  @include breakpoints-up(large) {
+    width: 75px;
   }
 }
