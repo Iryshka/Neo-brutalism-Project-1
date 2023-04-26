@@ -29,12 +29,20 @@ function addAnimationToLinks() {
   });
 }
 
-function addListenerToLink(link) {
-  link.addEventListener("click", () => {
+// function addListenerToLink() {
+//   navLinks.addEventListener("click", () => {
+//     navList.classList.remove("header__active");
+//     burger.classList.remove("m-yellow");
+//     console.log("Hey");
+//   });
+// }
+
+navLinks.forEach((link) => {
+  link.addEventListener("click", (e) => {
     navList.classList.remove("header__active");
     burger.classList.remove("m-yellow");
   });
-}
+});
 
 // VALIDATION FORM
 
