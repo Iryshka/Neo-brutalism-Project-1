@@ -2,6 +2,10 @@
 @use "mixins" as *;
 
 .footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
   background-color: v.$primary-color-2;
@@ -11,9 +15,10 @@
 
   @include breakpoints-up(semimedium) {
     display: flex;
+    flex-direction: row;
     justify-content: center;
-    align-items: center;
-    padding: 0 16px;
+    align-items: flex-start;
+    padding: 15px 16px 0 16px;
   }
 
   @include breakpoints-up(medium) {
@@ -29,36 +34,33 @@
     padding-right: 4rem;
   }
 
-  &__nav {
-    padding-bottom: 1.5rem;
+  &__logo {
+    margin-bottom: 16px;
+  }
 
+  &__wrapper {
     @include breakpoints-up(semimedium) {
       flex-grow: 1;
     }
 
     @include breakpoints-up(medium) {
-      flex-grow: 0;
+      display: flex;
+      justify-content: space-evenly;
     }
   }
 
-  &__list {
-    @include breakpoints-up(medium) {
-      column-count: 3;
-      text-align: left;
-    }
+  &__nav {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__list-title {
+    margin: 8px 0;
   }
 
   &__list-item {
     list-style: none;
-    font-size: 1rem;
-  }
-
-  &__list-item:nth-child(1),
-  &__list-item:nth-child(5),
-  &__list-item:nth-child(8) {
-    font-weight: 700;
-    font-size: 1.5rem;
-    padding-top: 1rem;
+    font-size: 16px;
   }
 
   &__link {
@@ -66,6 +68,8 @@
     color: v.$primary-color-1;
     transition: 0.2s ease;
     cursor: pointer;
+    padding: 7px;
+    display: inline-block;
 
     &:hover {
       color: #9747ff;
@@ -74,6 +78,14 @@
 
   &__link:not(:first-child) {
     margin-left: 0.5rem;
+  }
+
+  &__socials {
+    margin-top: 16px;
+
+    @include breakpoints-up(semimedium) {
+      margin-top: 0;
+    }
   }
 
   &__social-link {
@@ -85,11 +97,6 @@
     & svg rect:hover {
       fill: #9747ff;
     }
-
-    // & svg path:hover {
-    //   fill: #9747ff;
-    //   stroke: #9747ff;
-    // }
   }
 
   &__twitter svg path:hover {
