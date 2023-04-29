@@ -1,17 +1,21 @@
 @use "variables" as v;
 @use "mixins" as *;
 
-.header {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+header {
+  //added position sticky to header instead of .header
   position: sticky;
   top: 0;
   left: 0;
+  z-index: 1;
+}
+
+.header {
+  padding-top: 16px;
+  padding-bottom: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   background-color: v.$background-color;
-  z-index: 5;
 
   font-family: v.$ff-1;
 
@@ -38,7 +42,7 @@
       z-index: 1;
       transform: translateX(100%);
       transition: transform 0.3s ease-in;
-      font-size: 1.1rem;
+      font-size: 18px;
       font-weight: 700;
     }
   }
@@ -48,7 +52,7 @@
   }
 
   &__list-item {
-    padding-left: 5rem;
+    padding-left: 80px;
     list-style: none;
     cursor: pointer;
     animation-direction: normal;

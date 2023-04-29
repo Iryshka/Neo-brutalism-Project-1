@@ -14,13 +14,13 @@
 
   &__title {
     font-family: v.$ff-2;
-    font-size: 3.2rem;
-    line-height: 2.8rem;
+    font-size: 52px;
+    line-height: 45px;
     text-align: center;
-    padding-bottom: 3rem;
+    margin-bottom: 48px;
 
     @include breakpoints-up(large) {
-      font-size: 4rem;
+      font-size: 64px;
     }
   }
 
@@ -37,11 +37,11 @@
 
   &__paragraph {
     font-family: v.$ff-1;
-    font-size: 1.2rem;
-    padding-bottom: 4rem;
+    font-size: 19px;
+    margin-bottom: 64px;
 
     @include breakpoints-up(medium) {
-      font-size: 1.5rem;
+      font-size: 24px;
     }
   }
 }

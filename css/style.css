@@ -6,7 +6,7 @@
 
 html,
 body {
-  height: 100vh;
+  height: auto;
   font-size: 16px;
   scroll-behavior: smooth;
 }
@@ -15,6 +15,7 @@ body {
   background-color: #fff5eb;
   color: #000000;
   font-family: "Inter", sans-serif;
+  overflow-x: hidden;
 }
 
 .container {
@@ -47,7 +48,7 @@ body {
 @media (min-width: 820px) {
   .button {
     padding: 0.8rem 1.5rem;
-    font-size: 0.9rem;
+    font-size: 14px;
   }
 }
 .button:hover {
@@ -116,17 +117,20 @@ body {
     transform: rotate(0deg);
   }
 }
-.header {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+header {
   position: sticky;
   top: 0;
   left: 0;
+  z-index: 1;
+}
+
+.header {
+  padding-top: 16px;
+  padding-bottom: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   background-color: #fff5eb;
-  z-index: 5;
   font-family: "Inter", sans-serif;
 }
 .header__nav {
@@ -152,7 +156,7 @@ body {
     z-index: 1;
     transform: translateX(100%);
     transition: transform 0.3s ease-in;
-    font-size: 1.1rem;
+    font-size: 18px;
     font-weight: 700;
   }
 }
@@ -160,7 +164,7 @@ body {
   transform: translateX(0);
 }
 .header__list-item {
-  padding-left: 5rem;
+  padding-left: 80px;
   list-style: none;
   cursor: pointer;
   animation-direction: normal;
@@ -261,14 +265,14 @@ body {
 }
 .hero__title {
   font-family: "IBM Plex Mono", monospace;
-  font-size: 3.2rem;
-  line-height: 2.8rem;
+  font-size: 52px;
+  line-height: 45px;
   text-align: center;
-  padding-bottom: 3rem;
+  margin-bottom: 48px;
 }
 @media (min-width: 1026px) {
   .hero__title {
-    font-size: 4rem;
+    font-size: 64px;
   }
 }
 .hero__span {
@@ -282,12 +286,12 @@ body {
 }
 .hero__paragraph {
   font-family: "Inter", sans-serif;
-  font-size: 1.2rem;
-  padding-bottom: 4rem;
+  font-size: 19px;
+  margin-bottom: 64px;
 }
 @media (min-width: 820px) {
   .hero__paragraph {
-    font-size: 1.5rem;
+    font-size: 24px;
   }
 }
 
