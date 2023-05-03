@@ -2,20 +2,18 @@
 @use "mixins" as *;
 
 .global {
-  padding: 100px 0 100px 0;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
   gap: 3rem;
+  margin-bottom: 60px;
 
   @include breakpoints-up(medium) {
     flex-direction: row;
-  }
-
-  @include breakpoints-up(large) {
-    padding-left: 3rem;
-    padding-right: 3rem;
+    margin-bottom: 115px;
+    padding-left: 48px;
+    padding-right: 48px;
   }
 
   &__text {
@@ -60,18 +58,23 @@
     }
   }
 
-  &__image {
-    position: relative;
-    margin: 0 auto;
+  &__wrapper {
+    width: 100%;
 
     @include breakpoints-up(medium) {
       flex: 1;
     }
   }
 
-  &__globe {
+  &__image {
+    position: relative;
+    border-radius: 50%;
+    // it gets resized only if padding-bottom is the same as width
     width: 90%;
+    padding-bottom: 90%;
+    background-color: v.$accent-color-4;
     margin: 0 auto;
+    box-shadow: 7px 6px black;
   }
 
   &__spot1 {
@@ -97,9 +100,9 @@
 
   &__arrow {
     position: absolute;
-    top: 5%;
+    top: 7%;
     left: 0;
-    width: 85%;
+    width: 93%;
   }
 
   &__line {

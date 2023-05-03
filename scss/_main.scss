@@ -9,8 +9,8 @@
 
 html,
 body {
-  //changed height to auto inastead of 100vh;
-  //it fixed position sticky to the header
+  //changed height to auto instead of 100vh;
+  //it fixed position sticky in the header
   height: auto;
   font-size: 16px;
   scroll-behavior: smooth;
@@ -24,16 +24,16 @@ body {
 }
 
 .container {
-  padding: 0 1rem;
+  padding: 0 16px;
   max-width: 1440px;
   margin: 0 auto;
 
   @include breakpoints-up(medium) {
-    padding: 0 2rem;
+    padding: 0 32px;
   }
 
   @include breakpoints-up(large) {
-    padding: 0 4rem;
+    padding: 0 48px;
   }
 }
 

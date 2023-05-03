@@ -6,10 +6,11 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 110px 0 160px 0;
+  padding: 80px 0 80px 0;
+  margin-bottom: 10px;
 
   @include breakpoints-up(medium) {
-    padding-bottom: 230px;
+    padding-bottom: 115px;
   }
 
   &__title {

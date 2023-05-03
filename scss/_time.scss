@@ -2,7 +2,6 @@
 @use "mixins" as *;
 
 .time {
-  padding: 100px 0 100px 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -12,7 +11,8 @@
   @include breakpoints-up(medium) {
     flex-direction: row-reverse;
     text-align: left;
-    gap: 3rem;
+    gap: 48px;
+    margin-bottom: 115px;
   }
 
   @include breakpoints-up(medium) {
@@ -47,61 +47,73 @@
     margin-bottom: 2rem;
   }
 
-  &__image {
-    width: 90%;
-    position: relative;
+  &__wrapper {
+    width: 100%;
 
     @include breakpoints-up(medium) {
       flex: 1;
     }
   }
 
-  &__face {
+  &__image {
+    position: relative;
+    border-radius: 50%;
     width: 90%;
-  }
+    padding-bottom: 90%;
+    background-color: v.$accent-color-1;
+    margin: 0 auto;
+    box-shadow: 7px 6px black;
 
+    @include breakpoints-up(medium) {
+      flex: 1;
+    }
+  }
   &__span {
-    font-size: 2rem;
+    font-size: 32px;
     font-weight: bold;
     font-family: v.$ff-2;
   }
 
   &__twelve {
     position: absolute;
-    top: 4%;
-    left: 41%;
+    top: 5%;
+    left: 50%;
+    transform: translateX(-50%);
   }
 
   &__six {
     position: absolute;
-    bottom: 10%;
-    left: 46%;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
   }
 
   &__nine {
     position: absolute;
-    left: 8%;
-    top: 39%;
+    left: 5%;
+    top: 50%;
+    transform: translateY(-50%);
   }
 
   &__three {
     position: absolute;
-    top: 39%;
-    right: 17%;
+    right: 5%;
+    top: 50%;
+    transform: translateY(-50%);
   }
 
   &__rectangle2 {
     position: absolute;
     top: 28%;
-    left: 31%;
+    left: 34%;
     width: 32%;
     transform: rotate(90deg);
   }
 
   &__rectangle1 {
     position: absolute;
-    top: 37%;
-    left: 37%;
+    top: 35%;
+    left: 40%;
     width: 32%;
     z-index: 2;
     transform-origin: 30% 57%;
