@@ -92,10 +92,10 @@
     display: inline-block;
     width: 35px;
     height: 35px;
-    transition: 0.7s;
 
     & svg rect:hover {
       fill: #9747ff;
+      transition: 0.2s;
     }
   }
 
