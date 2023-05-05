@@ -7,6 +7,7 @@
   justify-content: center;
   align-items: center;
   text-align: center;
+  margin-bottom: 80px;
 
   @include breakpoints-up(medium) {
     flex-direction: row-reverse;
@@ -117,6 +118,7 @@
     width: 32%;
     z-index: 2;
     transform-origin: 30% 57%;
+    z-index: 1;
   }
 
   // ROTATE ANIMATION
