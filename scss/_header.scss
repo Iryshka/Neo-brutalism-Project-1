@@ -1,23 +1,23 @@
 @use "variables" as v;
 @use "mixins" as *;
 
-header {
+.header {
   //added position sticky to header instead of .header
   position: sticky;
   top: 0;
   left: 0;
   z-index: 2;
-}
 
-.header {
-  padding-top: 16px;
-  padding-bottom: 16px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: v.$background-color;
+  &__container {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: v.$background-color;
 
-  font-family: v.$ff-1;
+    font-family: v.$ff-1;
+  }
 
   &__nav {
     display: flex;

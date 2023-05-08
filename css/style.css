@@ -6,7 +6,6 @@
 
 html,
 body {
-  height: auto;
   font-size: 16px;
   scroll-behavior: smooth;
 }
@@ -117,14 +116,13 @@ body {
     transform: rotate(0deg);
   }
 }
-header {
+.header {
   position: sticky;
   top: 0;
   left: 0;
   z-index: 2;
 }
-
-.header {
+.header__container {
   padding-top: 16px;
   padding-bottom: 16px;
   display: flex;

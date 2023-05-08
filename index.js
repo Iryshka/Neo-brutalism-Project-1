@@ -5,13 +5,13 @@ const navList = document.querySelector(".header__list");
 const navLinks = document.querySelectorAll(".header__list-item");
 const burgerSpan = document.querySelector(".header__span");
 
-burger.addEventListener("click", () => {
+burger.addEventListener("click", () => toggleNavState());
+
+function toggleNavState() {
   navList.classList.toggle("header__active");
-
   addAnimationToLinks();
-
   yellowBurger();
-});
+}
 
 function yellowBurger() {
   burger.classList.toggle("m-yellow");
@@ -31,15 +31,11 @@ function addAnimationToLinks() {
 
 // iffy function
 
-(function addListenerToLinks() {
-  navLinks.forEach((link) => {
-    link.addEventListener("click", () => {
-      // console.log("link");
-      navList.classList.remove("header__active");
-      burger.classList.remove("m-yellow");
-    });
-  });
-})();
+// (function addListenerToLinks() {
+navLinks.forEach((link) => {
+  link.addEventListener("click", () => toggleNavState());
+});
+// })();
 
 //VALIDATION FORM
 
