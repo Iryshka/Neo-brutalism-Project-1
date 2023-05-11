@@ -65,7 +65,7 @@ body {
   transition: 0.2s;
 
   &:hover {
-    filter: drop-shadow(3px 3px 1px rgb(0 0 0 / 0.7));
+    filter: drop-shadow(1px 1px 1px rgb(0 0 0 / 0.7));
   }
 
   @include breakpoints-up(medium) {

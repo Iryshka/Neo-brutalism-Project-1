@@ -61,7 +61,7 @@ body {
   transition: 0.2s;
 }
 .logo:hover {
-  filter: drop-shadow(3px 3px 1px rgba(0, 0, 0, 0.7));
+  filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.7));
 }
 @media (min-width: 820px) {
   .logo {

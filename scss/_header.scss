@@ -2,7 +2,6 @@
 @use "mixins" as *;
 
 .header {
-  //added position sticky to header instead of .header
   position: sticky;
   top: 0;
   left: 0;
