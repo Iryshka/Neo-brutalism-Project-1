@@ -17,6 +17,11 @@ body {
   overflow-x: hidden;
 }
 
+.body-wrapper {
+  contain: paint;
+  position: relative;
+}
+
 .container {
   padding: 0 16px;
   max-width: 1440px;
@@ -34,9 +39,10 @@ body {
 }
 
 .button {
-  padding: 1.2rem 2.5rem;
+  padding: 19px 40px;
   background-color: #9747ff;
-  font-size: 1rem;
+  font-size: 18px;
+  font-family: "Inter", sans-serif;
   color: #ffffff;
   font-weight: 700;
   border: 3px solid #000000;
@@ -46,7 +52,7 @@ body {
 }
 @media (min-width: 820px) {
   .button {
-    padding: 0.8rem 1.5rem;
+    padding: 13px 24px;
     font-size: 14px;
   }
 }
@@ -511,8 +517,8 @@ body {
 }
 @media (min-width: 820px) {
   .time {
-    padding-left: 3rem;
-    padding-right: 3rem;
+    padding-left: 48px;
+    padding-right: 48px;
   }
 }
 @media (min-width: 820px) {
@@ -522,22 +528,22 @@ body {
 }
 .time__title {
   font-family: "IBM Plex Mono", monospace;
-  font-size: 1.8rem;
-  letter-spacing: -0.1rem;
-  padding-bottom: 1.5rem;
+  font-size: 28px;
+  letter-spacing: -1.6px;
+  padding-bottom: 24px;
 }
 @media (min-width: 820px) {
   .time__title {
-    font-size: 2.2rem;
+    font-size: 36px;
   }
 }
 .time__paragraph {
   font-family: "Inter", sans-serif;
-  font-size: 1rem;
-  padding-bottom: 1.5rem;
+  font-size: 16px;
+  padding-bottom: 24px;
 }
 .time__button {
-  margin-bottom: 2rem;
+  margin-bottom: 32px;
 }
 .time__wrapper {
   width: 100%;
@@ -615,8 +621,8 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
+  padding-top: 24px;
+  padding-bottom: 24px;
   background-color: #ffffff;
   font-family: "IBM Plex Mono", monospace;
   text-align: center;
@@ -642,8 +648,8 @@ body {
 }
 @media (min-width: 1026px) {
   .footer {
-    padding-left: 4rem;
-    padding-right: 4rem;
+    padding-left: 64px;
+    padding-right: 64px;
   }
 }
 .footer__logo {
@@ -744,12 +750,12 @@ body {
 }
 @media (min-width: 820px) {
   .main__title {
-    font-size: 1.6rem;
+    font-size: 26px;
   }
 }
 @media (min-width: 820px) {
   .main__title {
-    font-size: 2rem;
+    font-size: 32px;
   }
 }
 .main__paragraph {
@@ -759,12 +765,12 @@ body {
 }
 @media (min-width: 820px) {
   .main__paragraph {
-    font-size: 1.6rem;
+    font-size: 26px;
   }
 }
 @media (min-width: 820px) {
   .main__paragraph {
-    font-size: 2rem;
+    font-size: 32px;
   }
 }
 
@@ -842,10 +848,10 @@ body {
 }
 .welcome__input {
   width: 100%;
-  margin-bottom: 0.5rem;
+  margin-bottom: 8px;
   border: 2px solid #000000;
   color: #000000;
-  padding: 0.5rem;
+  padding: 8px;
   font-family: "IBM Plex Mono", monospace;
 }
 .welcome__input:focus {
@@ -877,14 +883,14 @@ body {
 }
 .welcome__socials {
   display: flex;
-  gap: 1rem;
-  margin-top: 2rem;
-  padding: 0.2rem;
+  gap: 16px;
+  margin-top: 32px;
+  padding: 3px;
   border: 2px solid #000000;
 }
 @media (min-width: 820px) {
   .welcome__socials {
-    margin-top: 5.5rem;
+    margin-top: 88px;
   }
 }
 .welcome__img {

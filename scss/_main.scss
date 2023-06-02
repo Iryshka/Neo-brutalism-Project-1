@@ -20,6 +20,12 @@ body {
   overflow-x: hidden;
 }
 
+.body-wrapper {
+  // overflow-x: clip;
+  contain: paint;
+  position: relative;
+}
+
 .container {
   padding: 0 16px;
   max-width: 1440px;
