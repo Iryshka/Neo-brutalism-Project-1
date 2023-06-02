@@ -29,13 +29,9 @@ function addAnimationToLinks() {
   });
 }
 
-// iffy function
-
-// (function addListenerToLinks() {
 navLinks.forEach((link) => {
   link.addEventListener("click", () => toggleNavState());
 });
-// })();
 
 //VALIDATION FORM
 
@@ -113,6 +109,6 @@ visibility.addEventListener("click", () => {
     icon.innerText = "visibility_off";
   } else {
     passwordInput.type = "password";
-    icon.innerText = "visibility";
+    // icon.innerHTML = "visibility";
   }
 });

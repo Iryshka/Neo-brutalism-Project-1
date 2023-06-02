@@ -9,9 +9,6 @@
 
 html,
 body {
-  //changed height to auto instead of 100vh;
-  //it fixed position sticky in the header
-  // height: auto;
   font-size: 16px;
   scroll-behavior: smooth;
 }
@@ -38,9 +35,10 @@ body {
 }
 
 .button {
-  padding: 1.2rem 2.5rem;
+  padding: 19px 40px;
   background-color: v.$accent-color-2;
-  font-size: 1rem;
+  font-size: 18px;
+  font-family: v.$ff-1;
   color: v.$primary-color-2;
   font-weight: 700;
   border: 3px solid v.$primary-color-1;
@@ -49,7 +47,7 @@ body {
   transition: 0.3s;
 
   @include breakpoints-up(medium) {
-    padding: 0.8rem 1.5rem;
+    padding: 13px 24px;
     font-size: 14px;
   }
 

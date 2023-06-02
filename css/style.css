@@ -700,7 +700,6 @@ body {
 }
 .footer__social-link svg rect:hover {
   fill: #9747ff;
-  transition: 0.2s;
 }
 .footer__twitter svg path:hover {
   fill: #9747ff;

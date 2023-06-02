@@ -69,7 +69,6 @@
   &__image {
     position: relative;
     border-radius: 50%;
-    // it gets resized only if padding-bottom is the same as width
     width: 90%;
     padding-bottom: 90%;
     background-color: v.$accent-color-4;

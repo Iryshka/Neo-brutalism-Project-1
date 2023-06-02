@@ -6,8 +6,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
+  padding-top: 24px;
+  padding-bottom: 24px;
   background-color: v.$primary-color-2;
   font-family: v.$ff-2;
   text-align: center;
@@ -30,8 +30,8 @@
   }
 
   @include breakpoints-up(large) {
-    padding-left: 4rem;
-    padding-right: 4rem;
+    padding-left: 64px;
+    padding-right: 64px;
   }
 
   &__logo {
@@ -95,7 +95,6 @@
 
     & svg rect:hover {
       fill: #9747ff;
-      transition: 0.2s;
     }
   }
 
