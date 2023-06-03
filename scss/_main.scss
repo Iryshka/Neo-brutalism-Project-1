@@ -17,12 +17,10 @@ body {
   background-color: v.$background-color;
   color: v.$primary-color-1;
   font-family: v.$ff-1;
-  overflow-x: hidden;
+  contain: paint;
 }
 
 .body-wrapper {
-  // overflow-x: clip;
-  contain: paint;
   position: relative;
 }
 

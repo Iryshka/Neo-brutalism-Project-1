@@ -60,17 +60,8 @@
     animation-timing-function: ease;
 
     @include breakpoints-down(medium) {
-      opacity: 0;
       padding: 20px 120px;
       margin: 0 auto;
-    }
-
-    &.m-out {
-      animation-name: navLinkFadeRevert;
-    }
-
-    &.m-to {
-      animation-name: navLinkFade;
     }
   }
 

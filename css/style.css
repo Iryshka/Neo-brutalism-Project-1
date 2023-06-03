@@ -14,11 +14,10 @@ body {
   background-color: #fff5eb;
   color: #000000;
   font-family: "Inter", sans-serif;
-  overflow-x: hidden;
+  contain: paint;
 }
 
 .body-wrapper {
-  contain: paint;
   position: relative;
 }
 
@@ -178,16 +177,9 @@ body {
 }
 @media (max-width: 819px) {
   .header__list-item {
-    opacity: 0;
     padding: 20px 120px;
     margin: 0 auto;
   }
-}
-.header__list-item.m-out {
-  animation-name: navLinkFadeRevert;
-}
-.header__list-item.m-to {
-  animation-name: navLinkFade;
 }
 .header__link {
   text-decoration: none;
