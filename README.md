@@ -11,10 +11,10 @@ Additionally, a free Figma template was utilized as a design reference to create
 
 Features
 
-Responsive design for optimal viewing on different devices
-Interactive elements and smooth scrolling effects
-Use of Sass to enhance CSS styling and maintainability
-Implementation of JavaScript for dynamic functionality
+Responsive design for optimal viewing on different devices.
+Interactive elements and smooth scrolling effects.
+Use of Sass to enhance CSS styling and maintainability.
+Implementation of JavaScript for dynamic functionality.
 
 Installation
 
