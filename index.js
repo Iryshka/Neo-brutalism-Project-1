@@ -10,6 +10,7 @@ burger.addEventListener("click", () => toggleNavState());
 
 function toggleNavState() {
   navList.classList.toggle("header__active");
+  document.body.classList.toggle("no-scroll");
   yellowBurger();
 }
 
