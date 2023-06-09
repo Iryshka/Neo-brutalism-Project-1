@@ -11,16 +11,22 @@ burger.addEventListener("click", () => toggleNavState());
 function toggleNavState() {
   navList.classList.toggle("header__active");
   document.body.classList.toggle("no-scroll");
-  yellowBurger();
+  changerBurgerColor("toggle");
 }
 
-function yellowBurger() {
-  burger.classList.toggle("m-yellow");
+function changerBurgerColor(state) {
+  burger.classList[state]("m-yellow");
 }
 
 navLinks.forEach((link) => {
-  link.addEventListener("click", () => toggleNavState());
+  link.addEventListener("click", () => onLink());
 });
+
+function onLink() {
+  navList.classList.remove("header__active");
+  document.body.classList.remove("no-scroll");
+  changerBurgerColor("remove");
+}
 
 //VALIDATE FORM
 
