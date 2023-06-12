@@ -894,6 +894,12 @@ body {
 .welcome__img {
   width: 30px;
 }
+.welcome__link {
+  line-height: 0;
+  height: -moz-fit-content;
+  height: fit-content;
+  background-color: red;
+}
 .welcome__link svg rect:hover {
   fill: #9747ff;
 }

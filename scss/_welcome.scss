@@ -138,6 +138,9 @@
   }
 
   &__link {
+    line-height: 0;
+    height: fit-content;
+    background-color: red;
     & svg rect:hover {
       fill: #9747ff;
     }
