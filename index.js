@@ -101,9 +101,9 @@ visibility.addEventListener("click", () => {
 
   if (passwordInput.type === "password") {
     passwordInput.type = "text";
-    icon.innerText = "visibility_off";
+    icon.innerText = "visibility";
   } else {
     passwordInput.type = "password";
-    // icon.innerHTML = "visibility";
+    icon.innerHTML = "visibility_off";
   }
 });
